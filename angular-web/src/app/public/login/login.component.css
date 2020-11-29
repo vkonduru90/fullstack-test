@@ -1,0 +1,22 @@
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  text-align: justify;
+}
+
+.keep__me__login {
+  align-items: flex-end;
+  font-size: small;
+  padding-left: 0px;
+}
+
+.login__btn {
+  display: grid;
+}
+
+.keep__login__checkbox {
+  font-size: 5px;
+}

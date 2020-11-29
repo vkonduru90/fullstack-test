@@ -1,0 +1,39 @@
+@url = http://localhost:3000/api
+@surl = http://localhost:3000/api/secured
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZrb25kdXJ1OTBAZ21haWwuY29tIiwibmFtZSI6IlZlbmthdGVzaCIsImlkIjoxLCJpYXQiOjE2MDY2NTc4MTQsImV4cCI6MTkyMjAxNzgxNH0.Kfc3hVo8Fw3IMJ0qxikTo-EXNxf30JRXuock12PhZQU
+
+################################################################################################
+####### Registration GET
+################################################################################################
+
+POST {{url}}/login
+Content-Type: application/json
+
+{
+  "username":"vkonduru90@gmail.com",
+  "password":"123456"
+}
+
+################################################################################################
+#######  logout
+################################################################################################
+POST {{surl}}/logout
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+################################################################################################
+#######  Data
+################################################################################################
+GET {{surl}}/data
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+################################################################################################
+#######  filters
+################################################################################################
+GET {{surl}}/filters
+Content-Type: application/json
+Authorization: Bearer {{token}}
+

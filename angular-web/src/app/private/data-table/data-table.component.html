@@ -1,0 +1,12 @@
+<ngx-datatable #mydatatable class="material" [headerHeight]="50" [limit]="5" [footerHeight]="50" rowHeight="auto"
+  [rows]="rows" [columnMode]="ColumnMode.force" [loadingIndicator]="loadingIndicator" [scrollbarH]="true">
+  <ng-container *ngFor="let column of columns">
+    <ngx-datatable-column name={{column}}>
+      <!-- <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+        <span>
+          {{ value }}
+        </span>
+      </ng-template> -->
+    </ngx-datatable-column>
+  </ng-container>
+</ngx-datatable>

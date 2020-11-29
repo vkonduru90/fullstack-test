@@ -1,0 +1,13 @@
+.border__color {
+  border: 1px solid black;
+  margin-right: 30px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.body__content {
+  padding-left: 300px;
+  padding-top: 50px;
+}

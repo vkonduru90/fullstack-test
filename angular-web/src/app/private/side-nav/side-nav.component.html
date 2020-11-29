@@ -1,0 +1,6 @@
+<div id="mySidenav" class="sidenav">
+  <ng-container *ngFor = "let filter of filters">
+    <a (click)="filterBy(filter.name)">{{filter.name}}</a>
+  </ng-container>
+  <a (click)="filterBy('')">Reset</a>
+</div>

@@ -1,0 +1,20 @@
+<app-side-nav></app-side-nav>
+<app-header></app-header>
+
+<div class="row body__content">
+  <div class="col-3 border__color">
+    <div id="pieChart" style="height: 270px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+  </div>
+  <div class="col-3 border__color">
+    <div id="barChart" style="height: 270px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+  </div>
+  <div class="col-3 border__color">
+    <div id="lineChart" style="height: 270px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+  </div>
+</div>
+
+<div class="row body__content">
+  <div class="col-9">
+    <app-data-table [rows]=rows [temp]=rows [columns]=columns [loadingIndicator]=loadingIndicator></app-data-table>
+  </div>
+</div>

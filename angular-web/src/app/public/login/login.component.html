@@ -1,0 +1,32 @@
+<div class="row">
+
+  <div class="col-12 pt-5">
+    <br><br>
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <p>Sign into your account to continue access</p>
+      </div>
+    </div>
+    <form [formGroup]="signInForm">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 form-group">
+          <input type="text" formControlName="username" class="form-control " placeholder="Username*">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 form-group">
+          <input type="password" formControlName="password" class="form-control " placeholder="Password*">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 login__btn">
+          <button class="btn btn-primary" (click)="loginSubmit()" [disabled]="!signInForm.valid"> Login </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
